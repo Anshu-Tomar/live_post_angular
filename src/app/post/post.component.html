@@ -1,0 +1,19 @@
+
+<h1 class="mb-10">Latest Post...</h1>
+<div class="post" *ngFor="let post of listOfPosts" >
+<h1>{{post?.title}}</h1>
+<p><span>{{post?.description}}</span></p>
+<img src={{post?.imagePath}}
+class="img-responsive mb-3"
+/>
+<!-- <p>Auther: {{post?.author}}</p> -->
+
+<p>Date: {{post?.dateTimeCreated}}</p>
+<p>
+  <button type="button" (click)="likePost(post.id, post.numberOfLikes)" [value]="" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-thumbs-up"></span> Like ({{post?.numberOfLikes}}) 
+  </button>
+</p>
+<button class="btn btn-success mb-6"  (click)="Edit(post.id)">edit</button>  |
+<button  class="btn btn-primary mb-6" (click)="onDelete(post.id)">delete</button>
+</div>

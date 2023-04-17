@@ -1,0 +1,21 @@
+#navbarTogglerDemo01{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+.navsty{
+    font-size: 23px!important;
+    align-items: center;
+   padding: 10px;
+}
+.navstyle{
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 3px;
+    opacity: 1;
+}
+.navstyle:hover{
+    background: white;
+    color: black!important;
+    text-decoration: none;
+}
